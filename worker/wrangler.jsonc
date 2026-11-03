@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "mindseye-worker",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-09-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1.0
+  },
+  "placement": {
+    "mode": "smart"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "mindseye-db",
+      "database_id": "<YOUR_D1_DATABASE_ID>",
+      "migrations_dir": "./migrations"
+    }
+  ]
+}
