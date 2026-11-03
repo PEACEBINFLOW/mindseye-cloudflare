@@ -15,7 +15,7 @@
     {
       "binding": "DB",
       "database_name": "mindseye-db",
-      "database_id": "<YOUR_D1_DATABASE_ID>",
+      "database_id": "<bdcf60b5-185e-43cb-bbb2-39518c8cbe6c>",
       "migrations_dir": "./migrations"
     }
   ]
